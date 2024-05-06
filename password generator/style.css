@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dcb5ff;
+    color: #000249;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10px;
+    margin: 0;
+}
+
+h2 {
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.container {
+    background-color: #a5bdfd;
+    box-shadow: 0 4px 8px 0 rgba(229, 220, 220, 0.9), 0 6px 20px 0 rgba(229, 220, 220, 0.9);
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+.result-container {
+    background-color: #d9f2ff;
+    color: #000249;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.result-container #result {
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+    overflow-y: scroll;
+    height: 100%;
+}
+
+#result::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.result-container .btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.btn {
+    border: none;
+    background-color: #77529e;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.btn-large {
+    display: block;
+    width: 100%;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
